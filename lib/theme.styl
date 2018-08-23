@@ -10,6 +10,7 @@ $background = #222222
 $color = #ffffff
 $title = 'Patua One', cursive
 $text = 'Ubuntu', sans-serif
+$size = 3rem
 
 .bespoke-parent
   text-size-adjust: auto
@@ -22,6 +23,7 @@ $text = 'Ubuntu', sans-serif
   overflow: hidden
   transition: background 1s ease
   background-position: 50% 50%
+  font-size: 1.2rem
 
 .bespoke-scale-parent
   font-family: 'Ubuntu', sans-serif
@@ -38,9 +40,15 @@ $text = 'Ubuntu', sans-serif
   a
     color: $accent
     text-decoration: none
-  h1, h2, h3, h4
+  h1, h2, h3, h4, h5, h6
     font-family: $title
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5)
+  h1 
+    font-size: $size
+  h2
+    font-size: $size - 0.75rem
+  h3
+    font-size: $size - 1.5rem
   pre
     background: $color
     color: $background
@@ -48,13 +56,13 @@ $text = 'Ubuntu', sans-serif
     border-radius: .3rem
     box-shadow: 0 0 1rem rgba(0,0,0,.5)
     border: none
-  ul 
+  ul, ol
     li
       line-height 1.8rem
 
 .bespoke-slide
   transition: opacity .5s ease
-  width: 940px
+  width: 960px
   height: 480px
   position: absolute
   top: 50%
@@ -69,7 +77,6 @@ $text = 'Ubuntu', sans-serif
 
 .bespoke-active
   transition-delay: .25s
-  //z-index: 1
   &[data-bespoke-backdrop]
     transition-delay: .25s
 
@@ -148,6 +155,12 @@ $text = 'Ubuntu', sans-serif
 
 .emphatic-text
   color: $background
-  h1, h2, h3, h4
+  h1, h2, h3, h4, h5, h6
     color: $background
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25)
+
+.bespoke-blackout .bespoke-blackout-overlay
+  transition: opacity 0.5s ease-in
+
+.bespoke-blackout-overlay
+  transition: opacity 0.5s ease-in, visibility 0s linear 0.5s

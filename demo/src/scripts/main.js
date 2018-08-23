@@ -6,7 +6,10 @@ var bespoke = require('bespoke'),
   scale = require('bespoke-scale'),
   progress = require('bespoke-progress'),
   backdrop = require('bespoke-backdrop'),
-  prism = require('bespoke-prism');
+  prism = require('bespoke-prism'),
+  blackout = require('bespoke-blackout'),
+  fullscreen = require('bespoke-fullscreen');
+
 
 bespoke.from('article', [
   boluge(),
@@ -16,5 +19,7 @@ bespoke.from('article', [
   scale(),
   progress(),
   backdrop(),
+  blackout(),
+  fullscreen(),
   prism()
 ]);
