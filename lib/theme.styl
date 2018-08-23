@@ -10,7 +10,7 @@ $background = #222222
 $color = #ffffff
 $title = 'Patua One', cursive
 $text = 'Ubuntu', sans-serif
-$size = 2.6rem
+$size = 3.2rem
 
 .bespoke-parent
   text-size-adjust: auto
@@ -46,9 +46,9 @@ $size = 2.6rem
   h1 
     font-size: $size
   h2
-    font-size: $size - ($size/3)
+    font-size: $size - ($size/4)
   h3
-    font-size: $size - 1.5rem
+    font-size: $size - ($size/3)
   pre
     background: $color
     color: $background
@@ -59,11 +59,21 @@ $size = 2.6rem
   ul, ol
     li
       line-height 1.8rem
+  p 
+    &.center
+      text-align: center
+    &.left
+      text-align: left
+    &.right
+      text-align: right
+    &.justify
+      text-align: justify;
+      text-justify: inter-word;
 
 .bespoke-slide
   transition: opacity .5s ease
-  width: 960px
-  height: 480px
+  width: 620px
+  height: 460px
   position: absolute
   top: 50%
   left: 50%
