@@ -2,15 +2,15 @@
 // Stylus: http://learnboost.github.io/stylus
 
 @import 'normalizecss/normalize.css'
-//@import './fonts.css'
-@import url('https://fonts.googleapis.com/css?family=Patua+One|Ubuntu')
+@import './fonts.css'
+//@import url('https://fonts.googleapis.com/css?family=Patua+One|Ubuntu')
 
 $accent = #FFC107
 $background = #222222
 $color = #ffffff
 $title = 'Patua One', cursive
 $text = 'Ubuntu', sans-serif
-$size = 3rem
+$size = 2.6rem
 
 .bespoke-parent
   text-size-adjust: auto
@@ -23,7 +23,7 @@ $size = 3rem
   overflow: hidden
   transition: background 1s ease
   background-position: 50% 50%
-  font-size: 1.2rem
+  font-size: 1.25rem
 
 .bespoke-scale-parent
   font-family: 'Ubuntu', sans-serif
@@ -46,7 +46,7 @@ $size = 3rem
   h1 
     font-size: $size
   h2
-    font-size: $size - 0.75rem
+    font-size: $size - ($size/3)
   h3
     font-size: $size - 1.5rem
   pre
