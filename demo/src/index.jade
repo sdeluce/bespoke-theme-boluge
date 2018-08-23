@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    title bespoke-theme-boluge
+    meta(name='description', content='A theme for Bespoke.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(charset='utf-8')
+
+    style.
+      .title {
+        background-image: url('https://images.unsplash.com/photo-1483104879057-379b6c2fe5a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=32e266d9673ef0327b6ac754ea36fbf1&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb')
+      }
+
+  body
+
+    article
+
+      section
+        h1 bespoke-theme-boluge
+        h2 A Bespoke.js theme by <a href="https://github.com/boluge">Stéphane Deluce</a>
+
+      section(data-bespoke-backdrop='title')
+        h1 bespoke-theme-boluge
+
+      section
+        h1.bullet Paragraph
+        p.bullet In eu diam sed mi blandit pulvinar.
+
+      section
+        h1.bullet Unordered List
+        ul
+          li In eu diam sed mi blandit pulvinar.
+          li Etiam hendrerit nunc ut tortor interdum faucibus.
+          li Nulla eget nibh et enim sagittis dictum.
+
+      section
+        h1 Highlight
+        pre
+          code.language-javascript
+            | function foobar(text) {
+            |   console.log(text):
+            | }
+
+            | foobar('It works with JavaScript!');
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Emphatic Slide
+
+      section
+        h1.bullet Enjoy <span class='bullet'>:)</span>
+
+    a(href='https://github.com/boluge/bespoke-theme-boluge')
+      img(style='position: absolute; top: 0; right: 0; border: 0; width: 25vw; max-width: 149px;', src='http://aral.github.com/fork-me-on-github-retina-ribbons/right-grey@2x.png' alt='Fork me on GitHub')
+
+    script(src='build/build.js')

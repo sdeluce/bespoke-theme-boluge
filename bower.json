@@ -1,0 +1,11 @@
+{
+  "name": "bespoke-theme-boluge",
+  "version": "1.0.0",
+  "main": "./dist/bespoke-theme-boluge.js",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "bespoke.js": ">=1.0.0"
+  }
+}
