@@ -34,6 +34,24 @@ bespoke.from('#presentation', [
 ]);
 ```
 
+## Gulpfile
+
+Add 'fontTheme' to copy fonts files and use it in fonts.
+
+```js
+gulp.task('fontTheme', function() {
+  return gulp.src('node_modules/bespoke-theme-boluge/lib/fonts/**/*')
+    .pipe(gulp.dest('src/fonts'))
+    .pipe(connect.reload());
+});
+// Call the copy method "fontTheme" in the "fonts" task 
+gulp.task('fonts', ['fontTheme', 'clean:fonts'], function() {
+  return gulp.src('src/fonts/*')
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe(connect.reload());
+});
+```
+
 ## Package managers
 
 ### npm
