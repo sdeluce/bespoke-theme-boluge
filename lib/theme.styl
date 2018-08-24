@@ -3,14 +3,12 @@
 
 @import 'normalizecss/normalize.css'
 @import 'prismjs/themes/prism-okaidia.css'
-@import './fonts.css'
-//@import url('https://fonts.googleapis.com/css?family=Patua+One|Ubuntu')
 
 $accent = #FFC107
 $background = darken(#263238, 5)
 $color = #ffffff
-$title = 'Patua One', cursive
-$text = 'Ubuntu', sans-serif
+$title  = 'Maven Pro', sans-serif
+$text = 'Maven Pro', sans-serif
 $size = 3.2rem
 
 .bespoke-parent
@@ -27,7 +25,8 @@ $size = 3.2rem
   font-size: 1.25rem
 
 .bespoke-scale-parent
-  font-family: 'Ubuntu', sans-serif
+  font-family: $text
+  font-weight 400
   position: absolute
   top: 0
   left: 0
@@ -44,6 +43,7 @@ $size = 3.2rem
   h1, h2, h3, h4, h5, h6
     transition: color 1s ease
     font-family: $title
+    font-weight 700
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5)
   h1 
     font-size: $size
@@ -104,6 +104,7 @@ $size = 3.2rem
 .bespoke-backdrop
   opacity: 0
   transition: opacity 1s ease, transform 16s linear
+  background-repeat: no-repeat
   background-size: cover
   background-position: 50% 50%
   transform: translateZ(0) scale(1.3)

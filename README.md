@@ -34,22 +34,12 @@ bespoke.from('#presentation', [
 ]);
 ```
 
-## Gulpfile
+## Fonts
 
-Add 'fontTheme' to copy fonts files and use it in fonts.
+This theme uses a google font, add this line in the head tag of your jade file:
 
-```js
-gulp.task('fontTheme', function() {
-  return gulp.src('node_modules/bespoke-theme-boluge/lib/fonts/**/*')
-    .pipe(gulp.dest('src/fonts'))
-    .pipe(connect.reload());
-});
-// Call the copy method "fontTheme" in the "fonts" task 
-gulp.task('fonts', ['fontTheme', 'clean:fonts'], function() {
-  return gulp.src('src/fonts/*')
-    .pipe(gulp.dest('dist/fonts'))
-    .pipe(connect.reload());
-});
+```jade
+link(href='https://fonts.googleapis.com/css?family=Maven+Pro:400,700', rel='stylesheet')
 ```
 
 ## Package managers
