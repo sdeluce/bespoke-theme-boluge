@@ -1,6 +1,6 @@
 {
   "name": "bespoke-theme-boluge",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A theme for Bespoke.js",
   "homepage": "https://github.com/boluge/bespoke-theme-boluge",
   "bugs": "https://github.com/boluge/bespoke-theme-boluge/issues",
@@ -30,6 +30,7 @@
     "bespoke-prism": "^1.0.1",
     "bespoke-progress": "^1.0.0",
     "bespoke-scale": "^1.0.0",
+    "bespoke-state": "^1.0.0",
     "bespoke-touch": "^1.0.0",
     "brfs": "^1.1.1",
     "browserify": "^4.1.5",

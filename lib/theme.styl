@@ -6,7 +6,7 @@
 //@import url('https://fonts.googleapis.com/css?family=Patua+One|Ubuntu')
 
 $accent = #FFC107
-$background = #222222
+$background = darken(#263238, 5)
 $color = #ffffff
 $title = 'Patua One', cursive
 $text = 'Ubuntu', sans-serif
@@ -41,6 +41,7 @@ $size = 3.2rem
     color: $accent
     text-decoration: none
   h1, h2, h3, h4, h5, h6
+    transition: color 1s ease
     font-family: $title
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.5)
   h1 
@@ -60,6 +61,8 @@ $size = 3.2rem
     li
       line-height 1.8rem
   p 
+    transition: color 1s ease
+    line-height: 1.8rem
     &.center
       text-align: center
     &.left
@@ -160,14 +163,27 @@ $size = 3.2rem
   &-active
     opacity: 1
 
-.emphatic
-  background: $color
-
 .emphatic-text
-  color: $background
   h1, h2, h3, h4, h5, h6
-    color: $background
     text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.25)
+
+.light
+  color: $background
+  h1, h2, h3, h4, h5, h6, p
+    color: $background
+    text-shadow: 0 .25rem .25rem rgba(0, 0, 0, 0.15)
+
+.green
+  background: #388E3C
+
+.orange
+  background: #FFC107
+
+.red
+  background: #F44336
+
+.blue
+  background: #1976D2
 
 .bespoke-blackout .bespoke-blackout-overlay
   transition: opacity 0.5s ease-in

@@ -8,7 +8,7 @@ html
 
     style.
       .title {
-        background-image: url('https://images.unsplash.com/photo-1483104879057-379b6c2fe5a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=32e266d9673ef0327b6ac754ea36fbf1&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb')
+        background-image: url(images/background.jpg)
       }
 
   body
@@ -16,7 +16,7 @@ html
     article
 
       section
-        h1 bespoke-theme-boluge
+        h1 Boluge
         p A Bespoke.js theme by <a href="https://github.com/boluge">Stéphane Deluce</a>
 
       section(data-bespoke-backdrop='title')
@@ -24,7 +24,7 @@ html
 
       section
         h2.bullet Paragraph
-        p.bullet In eu diam sed mi blandit pulvinar.
+        p.bullet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nulla maximus, dictum est quis, feugiat nisl. Nam fermentum dapibus nisi et consequat. Vivamus sit amet dictum ipsum. Maecenas efficitur mauris tellus, ut ullamcorper velit dictum at. Morbi quam odio, euismod in odio vel, facilisis rutrum diam.
 
       section
         h2.bullet Ordered List
@@ -43,17 +43,33 @@ html
       section
         h2 Highlight
         pre
-          code.language-javascript
-            | function foobar(text) {
-            |   console.log(text):
-            | }
+          code.language-javascript.
+            function foobar(text) {
+              console.log(text):
+            }
 
-            | foobar('It works with JavaScript!');
+            foobar('It works with JavaScript!');
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide
+      section.emphatic-text
+        h2 Text center
         p.center Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sem eu pretium interdum. Suspendisse in convallis orci. Suspendisse ut odio ultrices, consectetur tortor eu, egestas nisi. Curabitur at dictum ante, ut vestibulum nunc.
 
+      section.emphatic-text(data-bespoke-backdrop='green')
+        h2 Green Slide
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sem eu pretium interdum. Suspendisse in convallis orci.
+
+      section.emphatic-text(data-bespoke-backdrop='orange', data-bespoke-state='light')
+        h2 Orange Slide
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sem eu pretium interdum. Suspendisse in convallis orci.
+
+      section.emphatic-text(data-bespoke-backdrop='red')
+        h2 Red Slide
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sem eu pretium interdum. Suspendisse in convallis orci.
+
+      section.emphatic-text(data-bespoke-backdrop='blue')
+        h2 Blue Slide
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend sem eu pretium interdum. Suspendisse in convallis orci.
+      
       section
         h2.bullet Enjoy <span class='bullet'>:)</span>
 

@@ -21,9 +21,9 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['clean', 'compile']);
 gulp.task('demo', ['compile', 'watch', 'connect']);
-gulp.task('compile', ['compile:lib', 'compile:demo']);
-gulp.task('compile:lib', ['stylus', 'browserify:lib']);
-gulp.task('compile:demo', ['jade', 'browserify:demo']);
+gulp.task('compile', ['fonts', 'images' ,'compile:lib', 'compile:demo']);
+gulp.task('compile:lib', ['images' ,'stylus', 'browserify:lib']);
+gulp.task('compile:demo', ['images' ,'jade', 'browserify:demo']);
 
 gulp.task('watch', function() {
   gulp.watch('lib/*', ['compile:lib', 'browserify:demo']);
@@ -106,6 +106,18 @@ gulp.task('jade', ['clean:jade'], function() {
     .pipe(isDemo ? plumber() : through())
     .pipe(jade({ pretty: true }))
     .pipe(gulp.dest('demo/dist'))
+    .pipe(connect.reload());
+});
+
+gulp.task('images', function() {
+  return gulp.src('demo/src/images/**/*')
+    .pipe(gulp.dest('demo/dist/images'))
+    .pipe(connect.reload());
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('demo/src/fonts/**/*')
+    .pipe(gulp.dest('demo/dist/fonts'))
     .pipe(connect.reload());
 });
 

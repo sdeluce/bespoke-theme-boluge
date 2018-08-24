@@ -8,7 +8,8 @@ var bespoke = require('bespoke'),
   backdrop = require('bespoke-backdrop'),
   prism = require('bespoke-prism'),
   blackout = require('bespoke-blackout'),
-  fullscreen = require('bespoke-fullscreen');
+  fullscreen = require('bespoke-fullscreen'),
+  state = require('bespoke-state');
 
 
 bespoke.from('article', [
@@ -21,5 +22,6 @@ bespoke.from('article', [
   backdrop(),
   blackout(),
   fullscreen(),
-  prism()
+  prism(),
+  state()
 ]);
