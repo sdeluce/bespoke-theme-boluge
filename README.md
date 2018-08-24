@@ -40,7 +40,7 @@ Add 'fontTheme' to copy fonts files and use it in fonts.
 
 ```js
 gulp.task('fontTheme', function() {
-  return gulp.src('node_modules/bespoke-theme-boluge/lib/fonts/**/*')
+  return gulp.src('node_modules/bespoke-theme-boluge/demo/src/fonts/**/*')
     .pipe(gulp.dest('src/fonts'))
     .pipe(connect.reload());
 });
